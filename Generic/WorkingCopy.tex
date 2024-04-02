@@ -1,0 +1,211 @@
+
+\documentclass{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage[9pt]{extsizes}
+\usepackage[margin=.5in, a4paper]{geometry}
+
+\input{glyphtounicode}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Omar Ahmed Elsayed} \\ \vspace{1pt}
+  \small +201501179339 $|$ \href{mailto:omarahmed170@gmail.com}{\underline{omarahmed170@gmail.com}} $|$ \href{https://www.OmarCodes.me}{\underline{OmarCodes.me}}\\
+  \href{https://www.linkedin.com/in/omarahmed-oa/}{\underline{linkedin.com/in/omarahmed-oa}} $|$
+  \href{https://github.com/OmarAhmed-A}{\underline{github.com/OmarAhmed-A}}
+\end{center}
+
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: VHDL, C, CPP, Python, JavaScript, SQL, C\#, Golang, Dart, Markdown, LaTeX} \\
+        \textbf{Developer Tools}{: Git, SSH, Linux, Google Cloud Platform, VS Code, Visual Studio} \\
+        \textbf{Libraries}{: SciKitLearn, pandas, NumPy, Matplotlib, TensorFlow: Keras}
+        }}
+\end{itemize}
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\href{https://github.com/OmarAhmed-A/Hyper-Market-Manegment-Semester6}{\underline{\textbf{Hyper Market Management System}}} $|$ \emph{Java, MySQL, NetBeans, jBCrypt, FlatLaf}}{Jun 2023}
+\resumeItemListStart
+\resumeItem{Revolutionized market management with a comprehensive system for sales, purchases, and employee roles.}
+\resumeItem{Implemented administrative, marketing, inventory management, sales, and user modules.}
+\resumeItem{Used Java for backend development, NetBeans for GUI, and MySQL for the database.}
+\resumeItem{Enhanced security with password management using jBCrypt and improved design using FlatLaf.}
+\resumeItem{Packaged for easy installation using jpackage with an executable installer available in the releases.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/OmarAhmed-A/Nvidia-DLI-Intro-to-DeepLearning}{\underline{\textbf{Experiments in DL and TL}}} $|$ \emph{Python, TensorFlow: Keras, Deep Learning, Transfer Learning}}{Nov 2022}
+\resumeItemListStart
+\resumeItem{Created an 11 layer CNN to classify ASL hand signs.}
+\resumeItem{Augmented training images to increase variety and prevent overfitting.}
+\resumeItem{Generated news headlines using an LSTM model.}
+\resumeItem{Prepared ImageNet for transfer learning and Retrained ImageNet to detect the presence of a specific dog in a photograph.}
+\resumeItem{Fine-tuned hyperparameters to reach an accuracy of 97\%.}
+\resumeItem{Retrained ImageNet to identify rotten fruits, Fine-tuned hyperparameters achieving 96\% accuracy.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\href{https://github.com/OmarAhmed-A/Final-Project-finding-donors}{\underline{\textbf{Finding Donors}}} $|$ \emph{Python, ScikitLearn, pandas, Numpy, Matplotlib}}{Jul 2022}
+\resumeItemListStart
+\resumeItem{Implemented and measured the performance of three supervised models}
+\resumeItem{Cleaned and prepared the data for Machine Learning}
+\resumeItem{Optimized final model using grid search reaching 87.04\% accuracy}
+\resumeItemListEnd
+\resumeProjectHeading
+{\href{https://github.com/OmarAhmed-A/PortfolioWebsite}{\underline{\textbf{Portfolio website}}} $|$ \emph{Node.js, JavaScript, GCP, NGINX, GitHub API}}{Jun 2022}
+\resumeItemListStart
+\resumeItem{Developed a portfolio website using Node.js and JavaScript, building upon an open-source project}
+\resumeItem{Hosted the website on GitHub Pages and utilized GCP and NGINX for deployment and server management}
+\resumeItem{Integrated the GitHub API to automatically display my latest projects and repositories}
+\resumeItem{Used the project as an opportunity to expand my skills in web development}
+\resumeItem{Website accessible at \href{https://www.OmarCodes.me}{\underline{OmarCodes.me}}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{ALX Data Science Course By ExploreAI (Tuition sponsored by Mastercard)}{Cairo, Egypt/Online}
+{Comprehensive data science training covering analysis, modeling, Python, SQL, and cloud computing}{Apr. 2023 -- Aug. 2024}
+\resumeSubheading
+{Arab Academy for Science, Technology and Maritime Transport}{Cairo, Egypt}
+{Bachelor of Science in Computer Engineering; Currently Achieved 126/180 Credit Hours}{Sep. 2020 -- May 2025}
+\resumeSubheading
+{NVIDIA Deep Learning Institute}{Online}
+{Fundamentals of Deep Learning \href{https://courses.nvidia.com/certificates/5d58177d4fb040e2afbf8aca6deb30db/}{\underline{Certificate}}}{November 2022}
+\resumeSubheading
+{Udacity} {Online}
+{Machine Learning Cross-Skilling Nanodegree \href{https://graduation.udacity.com/confirm/DU5NCRMP}{\underline{Certificate}}}{Jul 2022 -- Aug 2022}
+\resumeSubheading
+{Visa - Forage} {Online}
+{Visa Token Service Technology Virtual Experience Program \href{https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Visa/8ebZgyZyLA6h5gyqt_Visa_CxSSnup6ZjYxTvK6e_1676647035163_completion_certificate.pdf}{\underline{Certificate}}}{Feb 2023}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Embedded electronics Team member}{Sep 2022 -- Present}
+{IEEE Aast Cairo Student Branch}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Volunteered to help organise IEEE Explore a Worldwide programming competition held at Aast for the Egypt Section.}
+\resumeItem{Worked on research and development of a small maze-solving robot for micro-mouse competition.}
+\resumeItem{Developed a Python Teaching program for IEEE Women in Engineering (WIE) to teach Python to high school students.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Machine Learning Engineer}{March 2023}
+{Dell Hacktrick Hackathon}{Dell technologies, Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Collaborated in a team of six (\href{https://github.com/OmarAhmed-A/DigitalSquad}{\underline{DigitalSquad}}) to develop an intelligent agent for a maze problem using Deep Q-Networks algorithm.}
+\resumeItem{Implemented DQN algorithm in TensorFlow and PyTorch, and created a central repository for the code.}
+\resumeItem{Set up a cloud server on AWS EC2, and a Conda environment to reduce latency and ensure smooth code execution.}
+\resumeItem{Provided assistance on the algorithmic approach, and developed a translation layer for standard RL algorithms to work with the non standard competition environment.}
+\resumeItem{Ranked seventh out of 10 teams in the final phase, from 30 of 200 teams that signed up for phase one.}
+\resumeItem{Won the award for best spirit team, and gained valuable experience in machine learning, teamwork, and problem-solving.}
+\resumeItemListEnd
+
+
+
+
+
+\resumeSubheading
+{Entrepreneurs Team Member}{Oct 2020 -- Jan 2021}
+{Enactus AAST}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Collaborated with team members to achieve target results from the UN SDGs.}
+\resumeItem{Created research reports to document and communicate goals and accomplishments.}
+\resumeItem{Identified issues, analyzed information, and provided solutions to problems in biweekly meetings.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
