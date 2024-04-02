@@ -2,13 +2,8 @@
 
 Welcome to my LaTeX resume project, based on the "Jake's Resume" template originally created by Jake Gutierrez and available on Overleaf. This template offers a clean and concise layout for crafting professional resumes.
 
-## OG Template Information
-
-- **Template Name:** Jake's Resume
-- **Author:** Jake Gutierrez
-- **Last Updated:** 4 years ago
-- **License:** MIT License
-- **Abstract:** A straightforward and minimalist resume template
+## Demo
+Veiw a demo of the resume [HERE](https://omarcodes.me/#/contact)
 
 ## Template Source
 
