@@ -3,7 +3,7 @@
 Welcome to my LaTeX resume project, based on the "Jake's Resume" template originally created by Jake Gutierrez and available on Overleaf. This template offers a clean and concise layout for crafting professional resumes.
 
 ## Demo
-Veiw a demo of the resume [HERE](https://omarcodes.me/#/contact)
+Veiw a demo of the resume [HERE](https://omarx.uk/#/contact)
 
 ## Template Source
 
