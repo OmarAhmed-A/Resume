@@ -1,0 +1,207 @@
+
+\documentclass{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+% \usepackage[11pt]{extsizes}
+% [margin=.5in, a3paper]
+\usepackage[margin=.5in]{geometry}
+
+\geometry{a4paper}
+
+
+\input{glyphtounicode}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Omar Ahmed Elsayed} \\ \vspace{1pt}
+  \small +20-redacted $|$ \href{mailto:omar@omarx.uk}{\underline{omar@omarx.uk}} $|$ \href{https://omarx.uk}{\underline{omarx.uk}}\\
+  \smallskip
+  \href{https://www.linkedin.com/in/omarahmed-oa/}{\underline{linkedin.com/in/omarahmed-oa}} $|$
+  \href{https://github.com/OmarAhmed-A}{\underline{github.com/OmarAhmed-A}}
+\end{center}
+
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Data Engineer with hands-on experience in dbt, Snowflake, and modern data stack technologies. Experienced in optimizing data pipelines and implementing CI/CD workflows while pursuing a Computer Engineering degree. Combines practical expertise in Python, SQL, and cloud platforms with a strong foundation in embedded systems and machine learning. Proven ability to translate business requirements into efficient technical solutions while maintaining high standards for documentation and code quality.
+    }}
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: VHDL, C, CPP, Python, JavaScript, SQL, C\#, Golang, Dart, Markdown, LaTeX} \\
+        \textbf{Tools}{: Git, SSH, Linux, dbt, Snowflake, PowerBI, Azure, GCP, VS Code, Visual Studio} \\
+        \textbf{Libraries}{: SciKitLearn, pandas, NumPy, Matplotlib, TensorFlow: Keras}
+        }}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Arab Academy for Science, Technology and Maritime Transport}{Cairo, Egypt}
+{Bachelor of Science in Computer Engineering}{Sep. 2020 -- May 2025}
+
+\resumeSubheading
+{ALX Data Science Course By ExploreAI (Sponsored by Mastercard)}{Cairo, Egypt/Online}
+{Comprehensive data science training covering analysis, modeling and cloud computing \href{https://savanna.alxafrica.com/certificates/r7ZYpEcPJm}{\underline{Certificate}}}{Apr. 2023 -- Aug. 2024}
+
+\resumeSubheading
+{Visa - Forage} {Online}
+{Visa Token Service Technology Virtual Experience Program \href{https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Visa/8ebZgyZyLA6h5gyqt_Visa_CxSSnup6ZjYxTvK6e_1676647035163_completion_certificate.pdf}{\underline{Certificate}}}{Feb 2023}
+
+\resumeSubheading
+{NVIDIA Deep Learning Institute}{Online}
+{Fundamentals of Deep Learning \href{https://courses.nvidia.com/certificates/5d58177d4fb040e2afbf8aca6deb30db/}{\underline{Certificate}}}{Nov 2022}
+
+\resumeSubheading
+{Udacity} {Online}
+{Machine Learning Cross-Skilling Nanodegree \href{https://www.udacity.com/certificate/e/4207d068-f927-11ec-a922-03b5db929b3e}{\underline{Certificate}}}{Jul 2022 -- Aug 2022}
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{Data Engineer I}{Oct 2024 -- Present}
+{Raisa Energy}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Engineered custom dbt incremental strategies and materializations reducing pipeline build times by 70\%, optimizing operational costs}
+\resumeItem{Architected and implemented end-to-end CI/CD pipeline for dbt projects, establishing automated testing and deployment workflows}
+\resumeItem{Designed and optimized complex data models powering mission-critical Power BI analytics dashboards}
+\resumeItem{Published technical blog post on dbt CI pipeline implementation (\href{http://tech.raisa.com/dbt-ci-pipeline/}{\underline{Link}})}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Data Engineering Intern}{Jul 2024 -- Sep 2024}
+{Raisa Energy}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Spearheaded the modernization of dbt infrastructure, enhancing data transformation processes and pipeline efficiency}
+\resumeItem{Demonstrated exceptional performance leading to promotion to Data Engineer I role within 3 months}
+\resumeItem{Collaborated with cross-functional teams to translate complex business requirements into scalable data solutions}
+\resumeItemListEnd
+
+\resumeSubheading
+{Subject Matter Expert}{Jun 2023 -- Dec 2023}
+{Teleperformance Egypt}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Trained new agents while maintaining strict PCI compliance and data security protocols in an offshore technical support role}
+\resumeItemListEnd
+
+\resumeSubheading
+{Embedded Electronics Team Member}{Sep 2022 -- Present}
+{IEEE Aast Cairo Student Branch}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Designed and conducted multiple Python programming workshops for IEEE WIE and various school outreach programs, impacting 100+ students}
+\resumeItem{Led technical sessions on embedded systems and contributed to R\&D of autonomous maze-solving robot for micro-mouse competition}
+\resumeItem{Volunteered in organizing IEEE Explore programming competition for the Egypt Section at AAST}
+\resumeItemListEnd
+
+\resumeSubheading
+{Machine Learning Engineer}{Mar 2023}
+{Dell Hacktrick Hackathon}{Dell technologies, Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Collaborated in a team of six (\href{https://github.com/OmarAhmed-A/DigitalSquad}{\underline{DigitalSquad}}) to develop an intelligent agent for a maze problem using Deep Q-Networks algorithm.}
+\resumeItem{Implemented DQN algorithm in TensorFlow and PyTorch, and created a central repository for the code.}
+\resumeItem{Set up a cloud server on AWS EC2, and a Conda environment to reduce latency and ensure smooth code execution.}
+\resumeItem{Provided assistance on the algorithmic approach, and developed a translation layer for standard RL algorithms to work with the non standard competition environment.}
+\resumeItem{Ranked 7/200 and Won the award for best spirit team, and gained valuable experience in machine learning, teamwork, and problem-solving.}
+\resumeItemListEnd
+
+
+
+
+
+\resumeSubheading
+{Entrepreneurs Team Member}{Oct 2020 -- Jan 2021}
+{Enactus AAST}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Collaborated on UN SDG initiatives while creating analytical reports to track project outcomes and milestones}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
