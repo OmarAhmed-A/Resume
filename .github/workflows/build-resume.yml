@@ -42,13 +42,10 @@ jobs:
           path: output/Omar-Ahmed-Elsayed-Resume.pdf
 
       - name: Commit and push PDF
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add output/Omar-Ahmed-Elsayed-Resume.pdf
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Build: Update resume PDF [skip ci]"
-            git push
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "Build: Update resume PDF [skip ci]"
+          file_pattern: 'output/Omar-Ahmed-Elsayed-Resume.pdf'
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
