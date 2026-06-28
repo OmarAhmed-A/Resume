@@ -1,5 +1,7 @@
 
 \documentclass{article}
+\usepackage{lmodern}
+\usepackage{times}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -9,11 +11,11 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage{babel}
 \usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage[10pt]{extsizes}
-\usepackage[margin=.4in,a4paper]{geometry}
+\usepackage[margin=.35in,a4paper]{geometry}
 
 
 \input{glyphtounicode}
@@ -26,9 +28,11 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+\DeclareFixedFont{\sectionfont}{T1}{lmr}{bx}{n}{12}
+
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\sectionfont\raggedright
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -82,7 +86,7 @@
 \begin{document}
 
 \begin{center}
-  \textbf{\Huge \scshape Omar Ahmed Elsayed} \\ \vspace{1pt}
+  \textbf{\Huge \sectionfont \scshape Omar Ahmed Elsayed} \\ \vspace{1pt}
   \small \href{tel:+201501179339}{\underline{+201501179339}} $|$ \href{mailto:omar@omarx.uk}{\underline{omar@omarx.uk}} $|$ \href{https://omarx.uk}{\underline{omarx.uk}}\\
   \smallskip
   \href{https://www.linkedin.com/in/omarahmed-oa/}{\underline{linkedin.com/in/omarahmed-oa}} $|$
@@ -92,18 +96,19 @@
 \section{Professional Summary}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    Results-oriented \textbf{Data Engineer} with production experience in \textbf{Snowflake}, \textbf{dbt}, and \textbf{LLM} integration. Proven track record of architecting high-volume extraction pipelines processing \textbf{hundreds of GBs} of unstructured data weekly. Active \textbf{Open Source Contributor} to AI tools (Wren AI). Skilled in modernizing legacy infrastructure and building real-time analytics dashboards. Winner of the \textbf{Arab AI \& IoT Challenge} and exhibited at \textbf{GITEX Global}.
+    Data Engineer II with production experience in Snowflake, dbt, PostgreSQL, and LLM integration. Reduced dbt build times by \textbf{70\%}, architected pipelines processing \textbf{hundreds of GBs} weekly, and shipped an SQL-based RAG Natural Language-to-SQL application. Active open-source contributor (Wren AI) and Arab AI \& IoT Challenge winner.
     }}
 \end{itemize}
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Data Engineering}{: dbt, Snowflake, Web Scraping, ELT/ETL, Blob Storage} \\
-        \textbf{AI \& LLMs}{: LLM Ops, Vector Databases, RAG (Retrieval-Augmented Generation), Wren AI (Text-to-SQL)} \\
-        \textbf{Languages}{: Python (Advanced - Pandas/NumPy), SQL, Golang, Bash/Scripting} \\
-        \textbf{Cloud \& Tools}{: AWS, Azure, Git, Docker, Linux, CI/CD} \\
-        \textbf{Frontend \& Visualization}{: Expo (React Native), Streamlit, PowerBI}
+        \textbf{Data Engineering}{: dbt, Snowflake, PostgreSQL, Jinja, ELT/ETL, Data Modeling, Blob Storage, Web Scraping} \\
+        \textbf{AI \& LLMs}{: LLM Ops, RAG, Vector Databases, Wren AI (Text-to-SQL), Agentic AI} \\
+        \textbf{Languages}{: Python, SQL, Bash, Markdown $|$ Exposure: Go, C/C++, C\#, JavaScript, VHDL, Dart, LaTeX} \\
+        \textbf{Cloud \& DevOps}{: Azure DevOps, AWS, Docker, Linux, Git, CI/CD, Snowpark, Managed Identity} \\
+        \textbf{Agentic AI \& Productivity}{: Claude Code, Codex, OpenCode, GitHub Copilot}\\
+        \textbf{Visualization}{: Power BI, Streamlit, React (web), Plotly, Matplotlib, Seaborn}
         }}
 \end{itemize}
 
@@ -113,15 +118,17 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Arab Academy for Science, Technology and Maritime Transport}{Cairo, Egypt}
-{B.Sc. Computer Engineering}{Sep. 2020 -- May 2025}
+{Arab Academy for Science, Technology and Maritime Transport (AAST)}{}
+{B.Sc. Computer Engineering}{}
+
+\vspace{2 mm}
 
 \resumeSubHeadingListEnd
 
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
         \textbf{Certifications:} \\
-        \textbullet\ \textbf{ALX Data Science} (ExploreAI) -- \href{https://savanna.alxafrica.com/certificates/r7ZYpEcPJm}{\underline{Certificate}} \\
+        \textbullet\ \textbf{ALX 13-Month Data Science} (ExploreAI - sponsored by Mastercard) -- \href{https://savanna.alxafrica.com/certificates/r7ZYpEcPJm}{\underline{Certificate}} \\
         \textbullet\ \textbf{NVIDIA DLI:} Fundamentals of Deep Learning -- \href{https://learn.nvidia.com/certificates?id=uF4WBk5XSiWY_k-OVN_XlA#}{\underline{Certificate}} \\
         \textbullet\ \textbf{Udacity:} Machine Learning Cross-Skilling Nanodegree -- \href{https://www.udacity.com/certificate/e/4207d068-f927-11ec-a922-03b5db929b3e}{\underline{Certificate}}
         }}
@@ -133,30 +140,35 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Data Engineer I}{Sep 2024 -- Present}
+{Data Engineer II}{Apr 2026 -- Present}
 {Raisa Energy}{Cairo, Egypt}
 \resumeItemListStart
-\resumeItem{\textbf{High-Volume Data Pipelines:} Architected and deployed scalable extraction pipelines for APIs, websites, and emails, processing \textbf{hundreds of gigabytes} of unstructured data weekly into \textbf{Blob Storage} and \textbf{Snowflake}}
-\resumeItem{\textbf{dbt Optimization:} Engineered custom dbt incremental strategies and materializations, reducing pipeline build times by \textbf{70\%} and optimizing cloud operational costs}
-\resumeItem{\textbf{CI/CD:} Architected end-to-end CI/CD workflows for dbt projects, establishing automated testing gates and deployment pipelines}
-\resumeItem{\textbf{Natural Language to SQL Insights:} Developed a Question-Answering application using SQL-based RAG to query databases via natural language, bridging the gap between non-technical stakeholders and complex datasets}
-\resumeItem{\textbf{Documentation:} Authored technical documentation and internal best practices for CI pipeline implementation}
+\resumeItem{\textbf{Upstream Feed Migration:} Migrated a critical third-party upstream feed from legacy ETL middleware to a direct Snowflake feed; validated \textbf{5.2M+ wells} and \textbf{599 columns} with 100\% match, 0.00\% volume variance, zero breaking changes, and \textbf{~\$30K/year} in avoided licensing/compute costs}
+\resumeItem{\textbf{Accounting Pipeline Modernization:} Rewrote a full-table accounting export as an incremental shadow-table pipeline; used row-hash change tracking to exact-match validate up to \textbf{42M rows} and scope failures to affected business groups only}
+\resumeItem{\textbf{Snowpark Containerization:} Containerized a third-party Python extraction pipeline for Snowpark with OAuth2, external access, persistent log volumes, and scheduled execution}
+\resumeItem{\textbf{Cross-Functional Coordination:} Aligned accounting teams and third-party providers on stable source identifiers, effective-date rules, and publish semantics for downstream integrations}
+\resumeItem{\textbf{Agentic Development:} Used Claude Code, Codex, OpenCode, and GitHub Copilot to accelerate Python pipeline development, debugging, code review, and documentation}
+\resumeItemListEnd
+
+\resumeSubheading
+{Data Engineer I}{Oct 2024 -- Apr 2026}
+{Raisa Energy}{Cairo, Egypt}
+\resumeItemListStart
+\resumeItem{Engineered dbt incremental strategies and custom SCD Type II materializations, cutting pipeline build times by \textbf{70\%}}
+\resumeItem{Built extraction pipelines for APIs, websites, and emails; ingest \textbf{100+ GB} of unstructured data weekly into Blob Storage and Snowflake}
+\resumeItem{Developed an SQL-based RAG Natural Language-to-SQL app, enabling non-technical stakeholders to self-serve analytics}
+\resumeItem{Architected Azure DevOps CI/CD with automated testing, key-pair auth \href{https://tech.raisa.com/dbt-ci-pipeline/}{\underline{(case study)}}}
+\resumeItem{Automated GCM authentication with Azure UAMI, eliminating manual PAT rotation and silent auth failures in pipelines}
+\resumeItem{Authored dbt/SQL best practices; built an issue-tracking integration linking Azure DevOps, Slack, and email}
 \resumeItemListEnd
 
 \resumeSubheading
 {Data Engineering Intern}{Jul 2024 -- Sep 2024}
 {Raisa Energy}{Cairo, Egypt}
 \resumeItemListStart
-\resumeItem{\textbf{Infrastructure:} Spearheaded legacy infrastructure modernization, driving critical platform updates that significantly improved system reliability and performance}
-\resumeItem{\textbf{Analytics:} Designed and optimized complex data models to power mission-critical Power BI analytics dashboards}
+\resumeItem{Modernized legacy infrastructure and optimized data models powering mission-critical Power BI dashboards}
 \resumeItemListEnd
 
-\resumeSubheading
-{Technical Support Subject Matter Expert}{Jun 2023 -- Dec 2023}
-{Teleperformance Egypt}{Cairo, Egypt}
-\resumeItemListStart
-\resumeItem{Mentored new agents on technical protocols and data security compliance, ensuring high service standards}
-\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -165,23 +177,22 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Open Source Contribution: Wren AI (Text-to-SQL Engine)} $|$ \emph{Contributor}}{}
+{\textbf{Open Source: Wren AI (Text-to-SQL)} $|$ \emph{Contributor}}{}
 \resumeItemListStart
-\resumeItem{Collaborated with the core engineering team to identify and resolve critical bugs in the open-source \textbf{Wren AI} engine; successfully pushed and merged Pull Requests (PRs) to fix backend issues}
+\resumeItem{Resolved critical backend bugs and merged PRs with the Wren AI core engineering team}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{\href{https://duckycart.me/}{\underline{AIoT Smart Shopping Cart (Graduation Project)}}} $|$ \emph{Data Visualization \& Frontend Engineer}}{}
+{\textbf{AIoT Smart Shopping Cart} $|$ \emph{Data Visualization \& Frontend Engineer}}{}
 \resumeItemListStart
-\resumeItem{\textbf{Awards:} Winner of \textbf{Arab AI \& IoT Challenge} \& \textbf{EGAIOT}; \textbf{2nd Place} at AUC Hackathon; Exhibited at \textbf{GITEX Global}}
-\resumeItem{Partnered with \textbf{Spinneys} and \textbf{Quanttronix} to pilot a smart retail system}
-\resumeItem{Developed the \textbf{Real-Time Analytics Dashboard} and consumer mobile app using \textbf{Expo (React Native)}, implementing real-time data synchronization via \textbf{MQTT}}
+\resumeItem{Winner of Arab AIOT Challenge \& EGAIOT; 2nd Place AUC Hackathon; exhibited at GITEX Global}
+\resumeItem{Partnered with Spinneys and Quanttronix; built real-time Analytics Dashboard and Expo (React Native) consumer app}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Intelligent Maze Agent (Dell Hacktrick Hackathon)} $|$ \emph{Machine Learning Engineer}}{Mar 2023}
+{\textbf{Intelligent Maze Agent (Dell Hacktrick)} $|$ \emph{Machine Learning Engineer}}{Mar 2023}
 \resumeItemListStart
-\resumeItem{Ranked \textbf{in top 10 of 200+ teams}; developed a Deep Q-Network (DQN) agent using \textbf{TensorFlow} and \textbf{PyTorch} deployed on \textbf{AWS EC2}}
+\resumeItem{Ranked top 10 of 200+ teams; developed a DQN agent with TensorFlow/PyTorch on AWS EC2}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -194,12 +205,10 @@
 {Technical Instructor \& Lecturer}{Sep 2022 -- Sep 2024}
 {IEEE AAST Cairo Student Branch}{Cairo, Egypt}
 \resumeItemListStart
-\resumeItem{Designed and conducted \textbf{Python programming workshops}, mentoring \textbf{100+ students} in core coding concepts and debugging}
-\resumeItem{Led technical R\&D sessions, breaking down complex technical topics for diverse audiences}
+\resumeItem{Designed Python workshops and mentored 100+ students in core coding and debugging; led technical R\&D sessions}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
 
 
 \end{document}
